@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="includes/styles.css" type="text/css" media="screen" />
 	</head>
 	<body>
+		<div id="background"></div>
 		<div id="header">
 			<h1>Tyler Johnson</h1>
 			<h2>Check out some of my personal projects!</h2>
@@ -14,9 +15,7 @@
 		<div id="pages-container">
 			<div id="pages">
 				<div class="pagelink">
-					<a href="https://gamejolt.com/games/FNaF-unity/780466">
-						<img src="includes/FNaFU Icon.png"/>
-					</a>
+					<iframe class="dynamicheight" src="https://widgets.gamejolt.com/package/v1?key=65W8TGfU&theme=light" frameborder="0"></iframe>
 					<h3>Five Nights at Freddy's faithfully recreated in Unity using assets from the original game</h3>
 				</div>
 				<div class="pagelink">
@@ -27,5 +26,16 @@
 				</div>
 			</div>
 		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>
+			$(window).ready(updateHeight);
+			$(window).resize(updateHeight);
+			function updateHeight() {
+				var div = $('.dynamicheight');
+				var width = div.width();
+				
+				div.css('height', width * 331 / 672);
+			};
+		</script>
 	</body>
 </html>

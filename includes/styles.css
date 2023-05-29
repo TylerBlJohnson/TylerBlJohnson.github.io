@@ -4,6 +4,21 @@
 	padding: 0;
 }
 
+#background {
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-image: url("little man.png");
+	background-position: right 31px bottom;
+	background-attachment: fixed;
+	background-size: 100px;
+	background-repeat: no-repeat;
+	z-index: -100;
+	background-color: blanchedalmond;
+}
+
 #header {
 	height: 80px;
 	margin: 0 -10%;
@@ -21,7 +36,7 @@
 	margin-bottom: -10px;
 }
 #header h2 {
-	color: #CCC;
+	color: #a6a6a6;
 	font-size: 200%;
 	letter-spacing: -2px;
 	text-align: right;
@@ -43,9 +58,10 @@
 	border: 2px solid black;
 	padding: 5px;
 	max-width: 450px;
+	background-color: white;
 }
 
-.pagelink a {
+.pagelink a, .pagelink iframe {
 	width: 100%;
 }
 
