@@ -27,26 +27,26 @@
 	text-align: right;
 }
 
+#pages-container {
+	margin: 0 20%;
+}
+
 #pages {
-	margin: 0 auto;
 	display: grid;
 	gap: 1rem;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-	margin: 0 10%;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	height: 100%;
+	justify-items: center;
 }
 
 .pagelink {
 	border: 2px solid black;
 	padding: 5px;
+	max-width: 450px;
 }
 
 .pagelink a {
 	width: 100%;
-	max-width: 600px;
-	position: relative;
-	display: flex;
-	left: 50%;
-	transform: translate(-50%, 0);
 }
 
 .pagelink img {
